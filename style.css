@@ -394,7 +394,7 @@
 .btn-cta:hover {
   background-color: #ff4f4f;
 }
-.footer {
+footer {
   background-color: #050505;
   padding: 30px 50px;
   color: #333;
@@ -423,16 +423,26 @@
   transform: scale(1.2);
 }
 
-/* اسم الموقع في الوسط */
-.footer-logo h2 {
-  color: #ff7f7f;
-  font-size: 4rem;
-  margin: 0;
+/* اسم الموقع */
+.footer-logo {
   text-align: center;
   flex: 1;
 }
 
-/* روابط Footer على اليمين */
+.footer-logo h2 {
+  color: #ff7f7f;
+  font-size: 3rem; /* أصغر قليلاً من قبل */
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-logo-img {
+  width: 60px; /* حجم أصغر */
+  display: block;
+  margin: 0 auto; /* تحت الاسم */
+}
+
+/* روابط Footer */
 .footer-links {
   display: flex;
   flex-direction: column;
@@ -456,14 +466,9 @@
   font-size: 0.9rem;
   color: #999;
 }
-.footer-copy {
-  line-height: 1.6;
-}
 
-
-/* Responsive */
+/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
-
   .footer {
     padding: 25px 20px;
   }
@@ -471,40 +476,41 @@
   .footer-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 25px;
+    gap: 20px;
   }
 
   .footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     order: 1;
+    justify-content: center;
   }
 
-  .footer-social img {
-    width: 26px;
-    height: 26px;
+  .footer-logo {
+    order: 2;
+    text-align: center;
   }
 
   .footer-logo h2 {
-    font-size: 2.2rem; 
-    order: 2;
+    font-size: 2.2rem; /* أصغر للهاتف */
+  }
+
+  .footer-logo-img {
+    width: 50px; /* أصغر قليلاً للهاتف */
   }
 
   .footer-links {
-    flex-direction: row;
-    gap: 20px;
     order: 3;
+    flex-direction: row; /* روابط بشكل أفقي للهاتف */
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .footer-links a {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
-  /* حقوق الطبع */
   .footer-copy {
     font-size: 0.8rem;
-    margin-top: 25px;
+    margin-top: 15px;
   }
 }

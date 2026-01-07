@@ -203,54 +203,126 @@ h1, h2, h3, h4 {
 }
 
 
+/* ================= Footer ================= */
 .footer {
   background-color: #050505;
   padding: 30px 50px;
   color: #333;
 }
+
 .footer-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+/* أيقونات التواصل */
 .footer-social a {
   margin-right: 15px;
   display: inline-block;
 }
+
 .footer-social img {
   width: 30px;
   height: 30px;
   transition: transform 0.3s;
 }
+
 .footer-social a:hover img {
   transform: scale(1.2);
 }
-.footer-logo h2 {
-  color: #ff7f7f;
-  font-size: 4rem;
-  margin: 0;
+
+/* اسم الموقع */
+.footer-logo {
   text-align: center;
   flex: 1;
 }
+
+.footer-logo h2 {
+  color: #ff7f7f;
+  font-size: 3rem; /* أصغر قليلاً من قبل */
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-logo-img {
+  width: 60px; /* حجم أصغر */
+  display: block;
+  margin: 0 auto; /* تحت الاسم */
+}
+
+/* روابط Footer */
 .footer-links {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .footer-links a {
   text-decoration: none;
   color: #faf9f9;
   transition: color 0.3s;
 }
+
 .footer-links a:hover {
   color: #ff7f7f;
 }
+
+/* حقوق الطبع أسفل Footer */
 .footer-copy {
   text-align: center;
   margin-top: 20px;
   font-size: 0.9rem;
   color: #999;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-social {
+    order: 1;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    order: 2;
+    text-align: center;
+  }
+
+  .footer-logo h2 {
+    font-size: 2.2rem; /* أصغر للهاتف */
+  }
+
+  .footer-logo-img {
+    width: 50px; /* أصغر قليلاً للهاتف */
+  }
+
+  .footer-links {
+    order: 3;
+    flex-direction: row; /* روابط بشكل أفقي للهاتف */
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
 }
 
 
@@ -392,43 +464,4 @@ h1, h2, h3, h4 {
   }
 }
 
-  /* Footer */
-  .footer {
-    padding: 20px 4%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .footer-social {
-    order: 1;
-    justify-content: center;
-  }
-
-  .footer-logo h2 {
-    font-size: 2rem;
-    order: 2;
-  }
-
-  .footer-links {
-    flex-direction: row;
-    gap: 15px;
-    order: 3;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .footer-links a {
-    font-size: 0.9rem;
-  }
-
-  .footer-copy {
-    font-size: 0.8rem;
-    margin-top: 15px;
-  }
-
-
+  
