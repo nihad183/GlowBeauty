@@ -275,6 +275,11 @@ h1, h2, h3, h4 {
     padding: 8px 4%;
   }
 
+  .back-arrow {
+    left: 4%;
+    font-size: 1.5rem;
+  }
+
   .brand {
     font-size: 1.2rem;
   }
@@ -284,29 +289,48 @@ h1, h2, h3, h4 {
     padding: 50px 4%;
   }
 
+  .categories h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
   .categories-list {
-    gap: 20px;
+    gap: 15px;
+    justify-content: center;
   }
 
   .category img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .category span {
+    font-size: 0.85rem;
   }
 
   /* Highlight */
   .highlight {
     flex-direction: column;
     align-items: center;
-    padding: 60px 4%;
-    gap: 30px;
+    padding: 40px 4%;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .highlight-image {
+    max-width: 300px;
   }
 
   .highlight-text {
-    text-align: center;
+    max-width: 100%;
   }
 
   .highlight-text h3 {
     font-size: 1.4rem;
+  }
+
+  .highlight-text p {
+    font-size: 0.9rem;
   }
 
   .random-images {
@@ -315,29 +339,45 @@ h1, h2, h3, h4 {
   }
 
   .random-img {
-    width: 45px;
+    width: 50px;
+    height: 50px;
   }
 
-  /* ⭐ Products: 2 cards per row */
+  /* Products Section */
+  .products-section {
+    padding: 30px 4%;
+  }
+
+  .motivational-text {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+ /* Products Section */
+  .products-section {
+    padding: 30px 4%;
+  }
+
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* عرض بطاقتين لكل صف */
     gap: 20px;
   }
 
   .product {
-    padding: 20px 12px;
+    padding: 15px;
   }
 
   .product img {
-    max-width: 75px;
+    max-width: 90px;
+    margin-bottom: 10px;
   }
 
   .product h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .product span {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .shop-btn {
@@ -345,18 +385,50 @@ h1, h2, h3, h4 {
     padding: 8px 15px;
   }
 
+  .heart {
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+  }
+}
+
   /* Footer */
   .footer {
-    padding: 25px 4%;
+    padding: 20px 4%;
   }
 
   .footer-container {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-social {
+    order: 1;
+    justify-content: center;
   }
 
   .footer-logo h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    order: 2;
   }
-}
+
+  .footer-links {
+    flex-direction: row;
+    gap: 15px;
+    order: 3;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
+
 
