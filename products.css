@@ -119,42 +119,6 @@ h1, h2, h3, h4 {
 .random-img:hover {
   transform: scale(1.2) rotate(5deg);
 }
-@media (max-width: 900px) {
-  .highlight {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 5%;
-  }
-
-  .highlight-image, .highlight-text {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .random-images {
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .random-img {
-    width: 50px;
-  }
-}
-@media (max-width: 500px) {
-  .highlight-text h3 {
-    font-size: 1.5rem;
-  }
-
-  .highlight-text p {
-    font-size: 0.95rem;
-  }
-
-  .random-img {
-    width: 40px;
-  }
-}
-
 
 
 /* Products */
@@ -173,7 +137,7 @@ h1, h2, h3, h4 {
 }
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;
 }
 .product {
@@ -237,34 +201,6 @@ h1, h2, h3, h4 {
   background: #ff4b5c;
   transform: translateY(-3px);
 }
-@media (max-width: 900px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 30px;
-  }
-
-  .motivational-text {
-    font-size: 1.6rem;
-  }
-
-  .product img {
-    max-width: 100px;
-  }
-}
-@media (max-width: 500px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-  }
-
-  .motivational-text {
-    font-size: 1.4rem;
-  }
-
-  .product img {
-    max-width: 90px;
-  }
-}
 
 
 .footer {
@@ -316,21 +252,7 @@ h1, h2, h3, h4 {
   font-size: 0.9rem;
   color: #999;
 }
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
 
-  .footer-links {
-    align-items: center;
-  }
-
-  .footer-social {
-    order: -1; 
-  }
-}
 
 
 /* Animation */
@@ -345,4 +267,96 @@ h1, h2, h3, h4 {
   transform: translateY(0);
 }
 
+/* ================== MOBILE RESPONSIVE (ADD ONLY) ================== */
+@media (max-width: 600px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 8px 4%;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  /* Categories */
+  .categories {
+    padding: 50px 4%;
+  }
+
+  .categories-list {
+    gap: 20px;
+  }
+
+  .category img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Highlight */
+  .highlight {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 4%;
+    gap: 30px;
+  }
+
+  .highlight-text {
+    text-align: center;
+  }
+
+  .highlight-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .random-images {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .random-img {
+    width: 45px;
+  }
+
+  /* ⭐ Products: 2 cards per row */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .product {
+    padding: 20px 12px;
+  }
+
+  .product img {
+    max-width: 75px;
+  }
+
+  .product h4 {
+    font-size: 0.9rem;
+  }
+
+  .product span {
+    font-size: 0.85rem;
+  }
+
+  .shop-btn {
+    font-size: 0.85rem;
+    padding: 8px 15px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 25px 4%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo h2 {
+    font-size: 2.5rem;
+  }
+}
 
