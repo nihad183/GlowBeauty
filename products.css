@@ -268,7 +268,7 @@ h1, h2, h3, h4 {
 }
 
 /* ================== MOBILE RESPONSIVE (ADD ONLY) ================== */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   /* Navbar */
   .navbar {
